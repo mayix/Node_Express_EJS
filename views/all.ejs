@@ -1,0 +1,17 @@
+<%- include("./partials/header.ejs") %>
+<%- include("./partials/navbar.ejs") %>
+
+<div class="container">
+    <h2>Check out all the posts:</h2>
+
+    <ul>
+        <% for (let i = 0; i < locals.entries.length; i++) { %>
+        <li>
+            <a style="text-decoration:none" href="/post/<%= entryPath[i] %>"> <%= entries[i] %></a>
+        </li>
+        <% } %>
+    </ul>
+</div>
+
+
+<%- include("./partials/footer.ejs") %>

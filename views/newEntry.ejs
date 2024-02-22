@@ -1,0 +1,21 @@
+<%- include("./partials/header.ejs") %>
+<%- include("./partials/navbar.ejs") %>
+
+<div class="container">
+    <form action="/submit" method="post">
+        <div class="mb-3">
+            <label for="entryTitle" class="form-label">Title</label>
+            <input type="text" class="form-control" id="entryTitle" name="title">
+        </div>
+        <div class="mb-3">
+            <label for="entryText" class="form-label">Write whatever you want</label>
+            <textarea class="form-control" id="entryText" style="height: 300px;" name="content"></textarea>
+        </div>
+        <button class="btn btn-primary d-inline-flex align-items-center" type="submit">
+            Create
+        </button>
+    </form>
+</div>
+
+
+<%- include("./partials/footer.ejs") %>
